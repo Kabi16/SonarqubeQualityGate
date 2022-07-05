@@ -22,7 +22,10 @@ pipeline {
         steps {
             withSonarQubeEnv('SonarQube') {
             bat 'mvn -f MyWebApp/pom.xml sonar:sonar'
+ 
+                }
+        
             }
-      }
+        
     }
 }
